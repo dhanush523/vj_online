@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<body>
+     <section class="hero">
+    <div class="container">
+      <nav class="navbar">
+        <h1 class="logo">VJ <span style="font-size: 20px;">ONLINE LEARN</span></h1>
+
+        <!-- Hamburger icon -->
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#courses">Course</a></li>
+          <li><a href="appointment.html">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <h3>Learn new skills anytime, anywhere with VJ Learn.</h3>
+        <p>Where skills meet opportunity, daily.</p>
+  <a href="course.html" class="explore-btn">Explore More<span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+<br>
+<br>
+
+
+  <!-- ------------------------------------------------------------------------------------------ -->
+
+   <section id="courses" >
+    <h2 style="color: #0c0c0c; text-align: center ;margin-bottom: 40px; font-size: 40px;">Course</h2>
+<h3 style="text-align: center; font-size: 32px; font-family: 'Playfair Display', serif;">
+Explore Top Online Courses to Build Your Future
+
+</h3>
+
+
+<div class="courses-section">
+
+
+    <div class="courses-wrapper">
+
+     <div class="course-box">
+        <img src="html.png" alt="Frontend" class="course-icon">
+        <h3>HTML</h3>
+        <p>HTML structures webpage content semantically, defining every element and layout.</p>
+        <a href="html.html" class="explore-btn">Explore HTML</a>
+      </div>
+
+      <div class="course-box">
+        <img src="css.png" alt="Backend" class="course-icon">
+        <h3>CSS</h3>
+        <p>CSS styles and designs layouts, colors, responsiveness with elegant control.</p>
+        <a href="css.html" class="explore-btn">Explore CSS</a>
+      </div>
+
+      <div class="course-box">
+        <img src="jj.png" alt="Database" class="course-icon" >
+        <h3>JAVA SCRIPT</h3>
+        <p>JavaScript adds functionality, interactivity, dynamic behavior to webpages seamlessly.</p>
+        <a href="js.html" class="explore-btn">Explore JS</a>
+      </div>
+
+  </div>
+  </div>
+  <div style="text-align: center;">
+  <a href="course.html" class="explore-btn">Explore More<span class="arrow">→</span></a>
+</div>
+</section>
+
+
+
+</body>
+</html>
+
+
+
+
+
+ <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      navLinks.classList.toggle("active");
+    }
+  </script>

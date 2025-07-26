@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SPRINGBOOT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 18px;
+      color: #ddd;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    .video-section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #2c3e50;
+    }
+
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .video-card {
+      background-color: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .video-card h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    iframe {
+      width: 100%;
+      height: 350px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    .download-section {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .download-btn {
+      background-color: #0e0c0c;
+      color: #fff;
+      padding: 14px 32px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .download-btn:hover {
+      background-color: #ffffff;
+      color: #0e0c0c;
+      border: 2px solid #0e0c0c;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      text-align: center;
+      background-color: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+     <h1>SPRINGBOOT Masterclass</h1>
+    <p>Spring Boot: Java framework for building fast, standalone web applications.</p>
+  </header>
+
+  <section class="video-section container">
+    <h2>Course Videos</h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <h3></h3>
+        <iframe src="https://www.youtube.com/embed/7d0c_CaHgEc?si=S0j3wX-M5hOWPUEa"  allowfullscreen></iframe>
+      </div>
+
+      <div class="video-card">
+        <h3></h3>
+        <iframe src="https://www.youtube.com/embed/35EQXmHKZYs?si=Myj-Gb0n4SDbom9_" allowfullscreen></iframe>
+      </div>
+
+      
+
+      
+    </div>
+  </section>
+
+  <section class="download-section">
+    <a href="springboot.pdf" download>
+      <button class="download-btn">📄 Download SPRINGBOOT PDF</button>
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 Web Development Masterclass. All rights reserved.
+  </footer>
+
+</body>
+</html>

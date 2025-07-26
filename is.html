@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .courses-section {
+  padding: 60px 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 40px;
+}
+
+.courses-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.course-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 300px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+}
+
+.course-box:hover {
+  transform: translateY(-10px);
+}
+
+.course-icon {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.course-box h3 {
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.course-box p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #2de3f4;
+  color: #000;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.explore-btn:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+@media (max-width: 768px) {
+  .courses-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <section id="courses" class="courses-section">
+  <div class="container">
+    <h2 class="section-title">Explore Our Courses</h2>
+
+    <div class="courses-wrapper">
+
+      <!-- Frontend Course -->
+      <div class="course-box">
+        <img src="el.png" alt="Frontend" class="course-icon">
+        <h3>Frontend Development</h3>
+        <p>Build stunning websites using HTML, CSS, JavaScript, and modern frameworks like React.</p>
+        <a href="#" class="explore-btn">Explore Frontend</a>
+      </div>
+
+      <!-- Backend Course -->
+      <div class="course-box">
+        <img src="el.png" alt="Backend" class="course-icon">
+        <h3>Backend Development</h3>
+        <p>Learn server-side development using Node.js, Python, and build powerful APIs.</p>
+        <a href="#" class="explore-btn">Explore Backend</a>
+      </div>
+
+      <!-- Database Course -->
+      <div class="course-box">
+        <img src="el.png" alt="Database" class="course-icon">
+        <h3>Database Management</h3>
+        <p>Master relational and non-relational databases like MySQL, MongoDB, and more.</p>
+        <a href="#" class="explore-btn">Explore Database</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

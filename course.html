@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+  background-color: rgb(252, 250, 247);
+}
+
+.courses-section {
+  padding: 60px 0;
+  /* background: #f4f4f4; */
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 40px;
+}
+        .courses-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+
+.course-box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 350px;
+  height: 400px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease;
+}
+
+.course-box:hover {
+  transform: translateY(-10px);
+}
+
+.course-icon {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.course-box h3 {
+  font-size: 22px;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.course-box p {
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #0e0c0c;
+  color: #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.explore-btn:hover {
+  background-color: #ffffff;
+  color: #131111;
+  border-color: #000;
+}
+
+@media (max-width: 768px) {
+  .courses-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.explore-btn .arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+  margin-left: 8px;
+  text-align: center;
+}
+
+.explore-btn:hover .arrow {
+  transform: translateX(5px);
+}
+
+    </style>
+</head>
+<body>
+    <section id="courses" >
+            <h2 style="color: #0c0c0c; text-align: center ;margin-bottom: 40px; font-size: 40px;">Course</h2>
+<br>
+<br>
+            <h3 style="text-align: center; font-size: 32px; font-family: 'Playfair Display', serif;">FRONT-END</h3>
+    <div class="courses-section">
+
+
+    <div class="courses-wrapper">
+
+      <div class="course-box">
+        <img src="html.png" alt="Frontend" class="course-icon">
+        <h3>HTML</h3>
+        <p>HTML structures webpage content semantically, defining every element and layout.</p>
+        <a href="html.html" class="explore-btn">Explore HTML</a>
+      </div>
+
+      <div class="course-box">
+        <img src="css.png" alt="Backend" class="course-icon">
+        <h3>CSS</h3>
+        <p>CSS styles and designs layouts, colors, responsiveness with elegant control.</p>
+        <a href="css.html" class="explore-btn">Explore CSS</a>
+      </div>
+
+      <div class="course-box">
+        <img src="jj.png" alt="Database" class="course-icon" >
+        <h3>JAVA SCRIPT</h3>
+        <p>JavaScript adds functionality, interactivity, dynamic behavior to webpages seamlessly.</p>
+        <a href="js.html" class="explore-btn">Explore JS</a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  
+  <!-- -------------------------------------------------------------------------------------------------- -->
+
+  <div class="courses-section">
+
+            <h3 style="text-align: center; font-size: 32px; font-family: 'Playfair Display', serif;">BACK-END</h3>
+<br>
+<br>
+    <div class="courses-wrapper">
+
+      <!-- Frontend Course -->
+      <div class="course-box">
+        <img src="java.jpg" alt="Frontend" class="course-icon">
+        <h3>JAVA</h3>
+        <p>Object-oriented, platform-independent language used for enterprise-scale applications.</p>
+        <a href="java.html" class="explore-btn">Explore JAVA</a>
+      </div>
+
+      <!-- Backend Course -->
+      <div class="course-box">
+        <img src="python.png" alt="Backend" class="course-icon">
+        <h3>PYTHON</h3>
+        <p>Simple syntax, versatile language for web, AI, data science, more.</p>
+        <a href="python.html" class="explore-btn">Explore PYTHON</a>
+      </div>
+
+      <!-- Database Course -->
+      <div class="course-box">
+        <img src="c++.png" alt="Database" class="course-icon">
+        <h3>C++</h3>
+        <p>Powerful, compiled language with speed, control, and system-level programming.</p>
+        <a href="c++.html" class="explore-btn">Explore C++</a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <!-- -------------------------------------------------------------------------------------------------- -->
+
+  <div class="courses-section">
+
+<h3 style="text-align: center; font-size: 32px; font-family: 'Playfair Display', serif;">DATABASE</h3>
+<br>
+<br>
+    <div class="courses-wrapper">
+
+      <!-- Frontend Course -->
+      <div class="course-box">
+        <img src="mysql.png" alt="Frontend" class="course-icon">
+        <h3>MY SQL</h3>
+        <p>Relational database using SQL; best for web-based data storage.</p>
+        <a href="mysql.html" class="explore-btn">Explore Frontend</a>
+      </div>
+
+      <!-- Backend Course -->
+      <div class="course-box">
+        <img src="postsql.png" alt="Backend" class="course-icon">
+        <h3>POST SQL</h3>
+        <p>Advanced relational database supporting complex queries and JSON hybrid storage.</p>
+        <a href="postsql.html" class="explore-btn">Explore Backend</a>
+      </div>
+
+      <!-- Database Course -->
+      <div class="course-box">
+        <img src="nosql.png" alt="Database" class="course-icon">
+        <h3>NO SQL</h3>
+        <p>Non-relational, flexible database for big data and real-time applications.</p>
+        <a href="nosql.html" class="explore-btn">Explore Database</a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <!-- -------------------------------------------------------------------------------------------------- -->
+
+  <div class="courses-section">
+
+<h3 style="text-align: center; font-size: 32px; font-family: 'Playfair Display', serif;">FRAMEWORKS</h3>
+<br>
+<br>
+    <div class="courses-wrapper">
+
+      <!-- Frontend Course -->
+      <div class="course-box">
+        <img src="react.svg" alt="Frontend" class="course-icon">
+        <h3>REACT</h3>
+        <p>JavaScript library for building dynamic, component-based user interfaces efficiently. .</p>
+        <a href="react.html" class="explore-btn">Explore REACT</a>
+      </div>
+
+      <!-- Backend Course -->
+      <div class="course-box">
+        <img src="spring.svg" alt="Backend" class="course-icon">
+        <h3>SPRING BOOT</h3>
+        <p>Java-based framework for building robust, scalable backend web applications quickly</p>
+        <a href="springboot.html" class="explore-btn">Explore SPOOTBOOT</a>
+      </div>
+
+      <!-- Database Course -->
+      <div class="course-box">
+        <img src="bootstrap.png" alt="Database" class="course-icon">
+        <h3>BOOTSTRAP</h3>
+        <p>CSS framework for responsive, mobile-first designs with ready-made components.</p>
+        <a href="bootstrap.html" class="explore-btn">Explore BOOTSTRAP</a>
+      </div>
+
+    </div>
+  </div>
+  </div>
+    <!-- -------------------------------------------------------------------------------------------------- -->
+
+</section>
+</body>
+</html>

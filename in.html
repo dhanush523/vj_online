@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Download HTML PDF</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;  /* center horizontally */
+      align-items: center;      /* center vertically */
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .download-btn {
+      display: inline-block;
+      padding: 10px 24px;
+      background-color: #0e0c0c;
+      color: #ffffff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      border: 2px solid transparent;
+      cursor: pointer;
+    }
+
+    .download-btn:hover {
+      background-color: #ffffff;
+      color: #131111;
+      border-color: #000;
+    }
+  </style>
+</head>
+<body>
+  <a href="Web_Development_HTML_Guide.pdf" download>
+    <button class="download-btn">📄 Download HTML PDF</button>
+  </a>
+</body>
+</html>
