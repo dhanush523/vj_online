@@ -1,0 +1,104 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <button onclick="openPopup()">Notify Me</button>
+<div id="popup" style="display:none; position:fixed; top:40%; left:50%; transform:translate(-50%, -50%); background:white; padding:20px; border:1px solid #ccc; border-radius:8px; text-align:center;">
+  <p>📢 You will be notified!</p>
+  <button onclick="closePopup()">Close</button>
+</div>
+
+</body>
+</html>
+
+
+<script>
+  function openPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  color: #333;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 0 25px #00000088;
+}
+
+.popup-content h2 {
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #00d1b2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #00b89c;
+}
+
+    </style>
+</head>
+<body>
+    <button class="notify-btn" onclick="openPopup()">Notify Me</button>
+<div class="popup" id="popup">
+  <div class="popup-content">
+    <h2>📩 You're Subscribed!</h2>
+    <p>We’ll notify you once the portal is live.</p>
+    <button class="close-btn" onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+<script>
+  function openPopup() {
+    document.getElementById("popup").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
